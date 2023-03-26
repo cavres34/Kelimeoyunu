@@ -2488,7 +2488,7 @@ Kazananlar 👑
     else:
         await bot.send_message(chat_id, "🧩 Aktif bir oyun yok.")
 
-@bot.message_handler(commands=['jdjdjd'])
+@bot.message_handler(commands=['rules'])
 async def rehber(message):
     #chat_tipi = message.chat.type
 
