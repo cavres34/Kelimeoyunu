@@ -2488,6 +2488,23 @@ Kazananlar 👑
     else:
         await bot.send_message(chat_id, "🧩 Aktif bir oyun yok.")
 
+@bot.message_handler(commands=['help'])
+def haftalik_grup(message):
+    #chat_tipi = message.chat.type
+
+    chat_id = message.chat.id #değişken, private veya group
+    #user_id = message.from_user.id #sabit
+    soru_suresi = f(f"soru_suresi")  
+    soru_suresi = str(round(soru_suresi/60,1)).replace(".0","")
+
+    bot.send_message(chat_id,f"""🏫 <b>Yardım Menüsü</b> 📖
+/rules - Kuralları Gösterir
+/game - Oyun Seçmeniz İçin
+/cancel - Oyunu İptal Eder
+/rating - Sıralamayı Gösterir
+🙏 Yardım ve sorularınız için: @Nazaramigeldikdersin""", parse_mode='html')
+
+
 @bot.message_handler(commands=['rules'])
 async def rehber(message):
     #chat_tipi = message.chat.type
