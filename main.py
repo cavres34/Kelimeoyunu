@@ -2495,7 +2495,7 @@ def haftalik_grup(message):
     chat_id = message.chat.id #değişken, private veya group
     #user_id = message.from_user.id #sabit
     soru_suresi = f(f"soru_suresi")  
-    soru_suresi = str(round(soru_suresi/60,1)).replace(".0","")
+    soru_suresi = str(round(soru_suresi/60,1)).replace(".1","")
 
     bot.send_message(chat_id,f"""🏫 <b>Yardım Menüsü</b> 📖
 /rules - Kuralları Gösterir
@@ -2514,7 +2514,7 @@ async def rehber(message):
 
 
     soru_suresi = f("soru_suresi")
-    soru_suresi = str(round(soru_suresi/60,1)).replace(".0","")
+    soru_suresi = str(round(soru_suresi/60,1)).replace(".1","")
 
     await bot.send_message(chat_id,f"""<b>🏫 Oyun kuralları 📖 :</b
 
