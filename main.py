@@ -51,7 +51,7 @@ if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
-    bot_adi = "@vefakelimebot"
+    bot_adi = "@gold"
     bot_token = "6191673056:AAFefwlppZRjyENFfb9cfae4s_NHhufhb1M"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
