@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(-1001654938309, f"""
+        await bot.send_message(-1001937961971, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001654938309, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001937961971, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,7 +569,7 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/Vefakelimebot?startgroup=a")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/goldgamebot?startgroup=a")
             callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/vefamusicdestek")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
