@@ -46,19 +46,19 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@vefakelimebot"
-    bot_token = "6191673056:AAFefwlppZRjyENFfb9cfae4s_NHhufhb1M"
+    bot_adi = "@timsahkelimebot"
+    bot_token = ""
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "gold"
-    bot_token = "6279713520:AAFhjLsRr7AinibICUsIgshTqdkcBaZVHFQ"
+    bot_token = ""
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
 
 
-kurucu_id = 5154387018
+kurucu_id = 1904295563
 
 admins = [kurucu_id, 5154387018]
 
