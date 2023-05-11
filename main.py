@@ -46,13 +46,13 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@klaskelimebot"
-    bot_token = "6036464122"
+    bot_adi = "@cavreskelimebot"
+    bot_token = "6146951939"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "gold"
-    bot_token = "6036464122:AAG7OTiofp2KUdsyfBGZM_7jODZ09RVuQL0"
+    bot_token = "6022705360:AAHV0N0_aDZ2o_8bipik362L_ZERd59p6gE"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
@@ -512,7 +512,7 @@ async def log_gonder(**kwargs):
 
 
     try:
-        await bot.send_message(--1001868652919, f"""
+        await bot.send_message(-1001725206955, f"""
 <b> ~~ 📢 Log Kaydı ~~</b>
 
 Grup: <code>{f(f"groups.{chat_id}.username")}</code>
@@ -527,7 +527,7 @@ Eylem: <code>{kwargs.get('eylem','')}</code>
         #else:
         #    bot.send_message(kurucu_id, str(e))
     try:
-        await bot.set_chat_title(-1001868652919, f"Bot Log - {len(oyunlar)}")
+        await bot.set_chat_title(-1001725206955, f"Bot Log - {len(oyunlar)}")
     except Exception as e:
         if "chat not found" in str(e):
             pass
@@ -569,8 +569,8 @@ async def start_private(message): #, **kwargs
             f(f"privates.{user_id}.start",True)
             keyboard = types.InlineKeyboardMarkup()
 
-            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/klaschat_sohbet_muhabbet")
-            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/klaschat_sohbet_muhabbet")
+            callback_button = types.InlineKeyboardButton(text="🇹🇷 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ 🇹🇷", url="https://t.me/logggg22")
+            callback_button2 = types.InlineKeyboardButton(text="⚙️ ʀᴇsᴍɪ ᴋᴀɴᴀʟ ⚙️", url="https://t.me/logggg22")
             keyboard.add(callback_button)
             keyboard.add(callback_button2)
             await bot.send_message(chat_id, f'<b>🇹🇷 Merhaba, Ben bir oyun botuyum .\n\n🎯 Çeşitli oyunlar oynamak ve eğlenceli vakit geçirmek için benimle oynayabilirsin .\n\n⚙️ Benimle oynamak için beni bir gruba ekleyin ve Yönetici Yapın .</b>',  reply_markup=keyboard)
@@ -708,8 +708,8 @@ async def sessiz_sinema_baslat(message, **kwargs):
 
     callback_button3 = types.InlineKeyboardButton(text="Kelimeye Bak 👀", callback_data="kelime_bak")
     callback_button2 = types.InlineKeyboardButton(text="Kelimeyi Geç ♻️", callback_data="siradaki_kelime")
-    #callback_button = types.InlineKeyboardButton(text="Kelime Yaz ✏️", callback_data="kelime_gir")
-    callback_button = types.InlineKeyboardButton(text="Kendi Kelimem 📝", url=f"https://t.me/KelimeoyunTRbot?start={oyun_id}")
+    #callback_button = types.InlineKeyboardButton(text="Kelime Yaz ✏️", callback_data="kelime_bak"")
+    callback_button = types.InlineKeyboardButton(text="Kendi Kelimem 📝", url=f"{oyun_id}")
 
 
     
