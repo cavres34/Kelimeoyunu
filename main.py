@@ -46,13 +46,13 @@ bot_adi = ""
 if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
-    bot_adi = "@cavreskelimebot"
+    bot_adi = "@telegramgame"
     bot_token = "6398477535"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
     bot_adi = "cavres"
-    bot_token = "6398477535:AAG2JDIkMw4bw6wIh-qIC8RhUTiJduQGp3Q"
+    bot_token = "6718278324:AAEPLJvFB9o8eL9ZeHaME69oVD5j89CUJKE"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 
 temp = {}
