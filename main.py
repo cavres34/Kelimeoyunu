@@ -43,11 +43,11 @@ import requests
 
 bot_adi = ""
 
-if hex(getnode()) in ["0xdc7b23bb434e"]: #windows masaüstü pc ise veya laptop
+if hex(getnode()) in [""]: #windows masaüstü pc ise veya laptop
     #kaç yaşındasın bot
     print("kyb")
     bot_adi = "@telegramgame"
-    bot_token = "6398477535"
+    bot_token = "6683031701"
     bot = AsyncTeleBot(bot_token, parse_mode="html")
 else:
     #sıl octopus bot
@@ -79,7 +79,7 @@ def get_traceback(e):
     return ''.join(lines)
 
 
-#if hex(getnode()) != "0xe03f494508ec":
+#if hex(getnode()) != "":
 #    telegram_yedek_al()
 
 
